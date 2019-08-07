@@ -33,6 +33,8 @@ default = ["proc-macro"]
 # of a token.
 span-locations = []
 
+procmacro2_semver_exempt = []
+
 # This feature no longer means anything.
 nightly = []
 
