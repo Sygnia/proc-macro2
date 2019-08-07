@@ -47,7 +47,7 @@ fn main() {
         process::exit(1);
     }
 
-    let semver_exempt = cfg!(procmacro2_semver_exempt);
+    let semver_exempt = cfg!(feature = "procmacro2_semver_exempt");
     if semver_exempt {
         // https://github.com/alexcrichton/proc-macro2/issues/147
         println!("cargo:rustc-cfg=procmacro2_semver_exempt");
